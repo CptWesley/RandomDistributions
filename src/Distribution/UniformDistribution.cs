@@ -42,7 +42,7 @@ namespace RandomDistribution.Distribution
         /// </summary>
         /// <param name="alpha">The alpha value of the distribution.</param>
         /// <param name="beta">The beta value of the distribution.</param>
-        /// <param name="seed">The seed.</param>
+        /// <param name="seed">The seed of the distribution.</param>
         public UniformDistribution(double alpha, double beta, int seed)
         {
             Alpha = alpha;

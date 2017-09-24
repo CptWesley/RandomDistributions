@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace RandomDistribution.Distribution
+namespace RandomDistribution.Distribution.Continuous
 {
     /// <summary>
     /// Distribution class for a weibull distribution.

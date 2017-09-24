@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace RandomDistribution.Distribution.Concrete
+namespace RandomDistribution.Distribution.Discrete
 {
     /// <summary>
     /// Distribution class for a binomial distribution.

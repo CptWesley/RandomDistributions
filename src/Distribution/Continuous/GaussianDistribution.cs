@@ -7,7 +7,7 @@ namespace RandomDistribution.Distribution.Continuous
     /// </summary>
     /// <seealso cref="RandomDistribution.Distribution.IDistribution" />
     /// <author>Wesley Baartman</author>
-    public class GaussianDistribution : IDistribution
+    public sealed class GaussianDistribution : IDistribution
     {
         /// <summary>
         /// Gets the mu (mean) value of the distribution.

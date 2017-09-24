@@ -7,7 +7,7 @@ namespace RandomDistribution.Distribution.Continuous
     /// </summary>
     /// <seealso cref="RandomDistribution.Distribution.IDistribution" />
     /// <author>Wesley Baartman</author>
-    public class UniformDistribution : IDistribution
+    public sealed class UniformDistribution : IDistribution
     {
         /// <summary>
         /// Gets the alpha value of the distribution.

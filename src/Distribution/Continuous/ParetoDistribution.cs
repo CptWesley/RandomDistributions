@@ -7,7 +7,7 @@ namespace RandomDistribution.Distribution.Continuous
     /// </summary>
     /// <seealso cref="RandomDistribution.Distribution.IDistribution" />
     /// <author>Wesley Baartman</author>
-    public class ParetoDistribution : IDistribution
+    public sealed class ParetoDistribution : IDistribution
     {
         /// <summary>
         /// Gets the alpha value of the distribution.

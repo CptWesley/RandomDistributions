@@ -7,7 +7,7 @@ namespace RandomDistribution.Distribution.Continuous
     /// </summary>
     /// <seealso cref="RandomDistribution.Distribution.IDistribution" />
     /// <author>Wesley Baartman</author>
-    public class WeibullDistribution : IDistribution
+    public sealed class WeibullDistribution : IDistribution
     {
         /// <summary>
         /// Gets the lambda value of the distribution.

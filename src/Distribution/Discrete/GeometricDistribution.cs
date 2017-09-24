@@ -7,7 +7,7 @@ namespace RandomDistribution.Distribution.Discrete
     /// </summary>
     /// <seealso cref="RandomDistribution.Distribution.IDistribution" />
     /// <author>Wesley Baartman</author>
-    public class GeometricDistribution : IDistribution
+    public sealed class GeometricDistribution : IDistribution
     {
         /// <summary>
         /// Gets the p value of the distribution.

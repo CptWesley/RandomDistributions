@@ -31,7 +31,7 @@ namespace RandomDistribution.Distribution.Concrete
         /// </summary>
         /// <param name="p">The p value of the distribution.</param>
         /// <param name="n">The n value of the distribution.</param>
-        public BinomialDistribution(double p, int n)
+        public BinomialDistribution(int n, double p)
         {
             P = p;
             N = n;
@@ -44,7 +44,7 @@ namespace RandomDistribution.Distribution.Concrete
         /// <param name="p">The p value of the distribution.</param>
         /// <param name="n">The n value of the distribution.</param>
         /// <param name="seed">The seed of the distribution.</param>
-        public BinomialDistribution(double p, int n, int seed)
+        public BinomialDistribution(int n, double p, int seed)
         {
             P = p;
             N = n;

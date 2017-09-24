@@ -3,7 +3,7 @@
 namespace RandomDistribution.Distribution.Continuous
 {
     /// <summary>
-    /// Distribution class for a gaussian distribution.
+    /// Distribution class for a gaussian (normal) distribution.
     /// </summary>
     /// <seealso cref="RandomDistribution.Distribution.IDistribution" />
     /// <author>Wesley Baartman</author>

@@ -59,7 +59,7 @@ namespace RandomDistribution.Distribution
         /// </returns>
         public double Next()
         {
-            throw new NotImplementedException();
+            return _rnd.NextDouble() * (Beta - Alpha) + Alpha;
         }
     }
 }

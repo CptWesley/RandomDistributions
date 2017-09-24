@@ -87,7 +87,7 @@ namespace RandomDistribution.Distribution.Continuous
                 s = u * u + v * v; // S = U^2+V^2
             } while (s >= 1);
 
-            double root = Math.Sqrt(-2 * Math.Log(s) / s) * Sigma + Mu; //
+            double root = Math.Sqrt(-2 * Math.Log(s) / s);
             double value = u * root;
 
             // Store the second result for better performance for every second execution.

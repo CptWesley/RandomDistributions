@@ -23,7 +23,7 @@ namespace RandomDistribution.Distribution
         /// </value>
         public double Beta { get; }
 
-        private Random _rnd;
+        private readonly Random _rnd;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="UniformDistribution"/> class.

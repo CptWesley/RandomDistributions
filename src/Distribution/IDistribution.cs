@@ -3,6 +3,7 @@
     /// <summary>
     /// Interface for distribution classes.
     /// </summary>
+    /// <author>Wesley Baartman</author>
     public interface IDistribution
     {
         /// <summary>

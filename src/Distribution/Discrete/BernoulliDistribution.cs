@@ -6,6 +6,7 @@ namespace RandomDistribution.Distribution.Discrete
     /// Distribution class for a bernoulli distribution.
     /// </summary>
     /// <seealso cref="RandomDistribution.Distribution.IDistribution" />
+    /// <author>Wesley Baartman</author>
     public class BernoulliDistribution : IDistribution
     {
         /// <summary>

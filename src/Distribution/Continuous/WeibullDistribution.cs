@@ -6,6 +6,7 @@ namespace RandomDistribution.Distribution.Continuous
     /// Distribution class for a weibull distribution.
     /// </summary>
     /// <seealso cref="RandomDistribution.Distribution.IDistribution" />
+    /// <author>Wesley Baartman</author>
     public class WeibullDistribution : IDistribution
     {
         /// <summary>

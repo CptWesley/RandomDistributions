@@ -48,14 +48,11 @@ namespace RandomDistribution.Distribution.Discrete
         /// </returns>
         public double Next()
         {
-            int value = 0;
+            double value = _rnd.NextDouble();
 
-            do
-            {
-                ++value;
-            } while (_rnd.NextDouble() > P);
+            value = Math.Log(value) / Math.Log(1 - P);
 
-            return value;
+            return Math.Ceiling(value);
         }
     }
 }

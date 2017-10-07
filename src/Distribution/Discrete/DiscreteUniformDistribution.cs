@@ -1,13 +1,13 @@
 ﻿using System;
 
-namespace RandomDistribution.Distribution.Continuous
+namespace RandomDistribution.Distribution.Discrete
 {
     /// <summary>
-    /// Distribution class for a uniform distribution.
+    /// Distribution class for a discrete uniform distribution.
     /// </summary>
     /// <seealso cref="RandomDistribution.Distribution.IDistribution" />
     /// <author>Wesley Baartman</author>
-    public sealed class UniformDistribution : IDistribution
+    public sealed class DiscreteUniformDistribution : IDistribution
     {
         /// <summary>
         /// Gets the alpha value of the distribution.
@@ -27,11 +27,11 @@ namespace RandomDistribution.Distribution.Continuous
         private readonly Random _rnd;
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="UniformDistribution"/> class.
+        /// Initializes a new instance of the <see cref="DiscreteUniformDistribution"/> class.
         /// </summary>
         /// <param name="alpha">The alpha value of the distribution.</param>
         /// <param name="beta">The beta value of the distribution.</param>
-        public UniformDistribution(double alpha, double beta)
+        public DiscreteUniformDistribution(double alpha, double beta)
         {
             Alpha = alpha;
             Beta = beta;
@@ -39,12 +39,12 @@ namespace RandomDistribution.Distribution.Continuous
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="UniformDistribution"/> class.
+        /// Initializes a new instance of the <see cref="DiscreteUniformDistribution"/> class.
         /// </summary>
         /// <param name="alpha">The alpha value of the distribution.</param>
         /// <param name="beta">The beta value of the distribution.</param>
         /// <param name="seed">The seed of the distribution.</param>
-        public UniformDistribution(double alpha, double beta, int seed)
+        public DiscreteUniformDistribution(double alpha, double beta, int seed)
         {
             Alpha = alpha;
             Beta = beta;
@@ -60,7 +60,7 @@ namespace RandomDistribution.Distribution.Continuous
         /// </returns>
         public double Next()
         {
-            return _rnd.NextDouble() * (Beta - Alpha) + Alpha;
+            return Math.Floor(_rnd.NextDouble() * (Beta - Alpha) + Alpha);
         }
     }
 }
